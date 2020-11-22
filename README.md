@@ -73,6 +73,9 @@ public class HelloWorldService implements Listener {
 }
 ```
 
+## Database operation
+Please check out [norm](https://github.com/dieselpoint/norm).
+
 ## Bypass spigot's watchdog system
 ```Kotlin
 bypassWatchDog {
