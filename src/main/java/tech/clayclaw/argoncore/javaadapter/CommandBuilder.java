@@ -31,4 +31,8 @@ public class CommandBuilder {
         registryService.register(this);
     }
 
+    public static CommandBuilder of(ReactantCommand coreCommand) {
+        return new CommandBuilder(coreCommand);
+    }
+
 }
