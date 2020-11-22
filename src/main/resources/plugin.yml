@@ -1,0 +1,8 @@
+name: ArgonCore
+main: tech.clayclaw.argoncore.ArgonCore
+version: 0.0.1
+api-version: 1.14
+author: ClayClaw
+depend:
+  - Reactant
+softdepend: []
