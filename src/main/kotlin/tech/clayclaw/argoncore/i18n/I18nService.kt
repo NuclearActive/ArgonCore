@@ -1,6 +1,7 @@
 package tech.clayclaw.argoncore.i18n
 
 import dev.reactant.reactant.core.component.Component
+import dev.reactant.reactant.core.component.lifecycle.LifeCycleControlAction
 import dev.reactant.reactant.core.component.lifecycle.LifeCycleInspector
 import dev.reactant.reactant.core.dependency.injection.Inject
 import dev.reactant.reactant.core.dependency.injection.producer.ComponentProvider
@@ -32,8 +33,7 @@ class I18nService(
         registerLocaleTable(registering())
     }
 
-    override fun afterEnable(componentProvider: ComponentProvider<Any>) {
-
+    override fun afterBulkActionComplete(action: LifeCycleControlAction) {
         ArgonCore.log.info("Found registered default locale: ${defaultLocaleTableMap.keys}")
 
         // Load locale configs
@@ -73,7 +73,6 @@ class I18nService(
                 .blockingAwait()
 
         defaultLocaleTableMap.clear()
-
     }
 
     fun parse(tag: String) = parseByLocale(tag, coreConfig.content.locale)

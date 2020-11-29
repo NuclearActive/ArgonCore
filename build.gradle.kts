@@ -38,6 +38,7 @@ dependencies {
     implementation("dev.reactant:modular-data:0.2.0-SNAPSHOT")
     implementation("com.github.shynixn.structureblocklib:structureblocklib-bukkit-api:2.1.0")
     implementation("com.github.shynixn.structureblocklib:structureblocklib-bukkit-core:2.1.0")
+    implementation("com.github.cryptomorin:XSeries:7.6.0.0.1")
 }
 
 
