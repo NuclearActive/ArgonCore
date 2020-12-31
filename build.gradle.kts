@@ -33,9 +33,9 @@ dependencies {
     compileOnly(kotlin("stdlib-jdk8", kotlinVersion))
     compileOnly("dev.reactant:reactant:0.2.0")
     compileOnly("org.spigotmc:spigot-api:1.16.3-R0.1-SNAPSHOT")
+    compileOnly("dev.reactant:modular-data:0.2.0-SNAPSHOT")
 
     implementation("com.dieselpoint:norm:0.8.5")
-    implementation("dev.reactant:modular-data:0.2.0-SNAPSHOT")
     implementation("com.github.shynixn.structureblocklib:structureblocklib-bukkit-api:2.1.0")
     implementation("com.github.shynixn.structureblocklib:structureblocklib-bukkit-core:2.1.0")
     implementation("com.github.cryptomorin:XSeries:7.6.0.0.1")

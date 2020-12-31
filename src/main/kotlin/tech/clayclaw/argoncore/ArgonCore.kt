@@ -7,8 +7,7 @@ import org.apache.logging.log4j.Logger
 import org.bukkit.plugin.java.JavaPlugin
 
 @ReactantPlugin([
-    "tech.clayclaw.argoncore",
-    "dev.reactant.modulardata"
+    "tech.clayclaw.argoncore"
 ])
 class ArgonCore : JavaPlugin() {
 
